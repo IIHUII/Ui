@@ -799,13 +799,13 @@ function redzlib:MakeWindow(Configs)
 	local Window, FirstTab = {}, false
 	function Window:CloseBtn()
 		local Dialog = Window:Dialog({
-			Title = "إغلاق",
-			Text = "هل انت متاكد انك تريد اغلاق السكربت؟",
+			Title = "Close",
+			Text = "Are you sure you want to close the script?",
 			Options = {
-				{"نعم انا متاكد", function()
+				{"YES", function()
 					ScreenGui:Destroy()
 				end},
-				{"إلغاء"}
+				{"NO"}
 			}
 		})
 	end
@@ -1973,12 +1973,12 @@ function redzlib:MakeWindow(Configs)
 				
 				ClickDelay = true
 				SetProps(JoinButton, {
-					Text = "تم نسخ للحافضة",
+					Text = "True",
 					BackgroundColor3 = Color3.fromRGB(100, 100, 100),
 					TextColor3 = Color3.fromRGB(230, 230, 230)
 				})task.wait(5)
 				SetProps(JoinButton, {
-					Text = "دخول",
+					Text = "Jion",
 					TextColor3 = Color3.fromRGB(255,255,255),
           BackgroundColor3 = Color3.fromRGB(50, 150, 50)
 				})ClickDelay = false
